@@ -17,60 +17,63 @@
         </header>
 
         <main>
-            <section>
+            <section class="mt-4">
                 <div class="row">
-                    <label for="inputNome" class="col-1">Nome:</label>
+                    <label for="inputNome" class="col-1 text-start">Nome:</label>
                     <div class="col">
 
                         <input id="inputNome" type="text" class="form-control" placeholder="First name"
                             aria-label="First name">
                     </div>
-                    <label for="inputSobrenome" class="col-1">Sobrenome:</label>
+                    <label for="inputSobrenome" class="col-1 g-1">Sobrenome:</label>
                     <div class="col">
                         <input id="inputSobrenome" type="text" class="form-control" placeholder="Last name"
                             aria-label="Last name">
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <label for="inputCEP" class="col-1">CEP:</label>
+                    <label for="inputCEP" class="col-1 text-start">CEP:</label>
                     <div class="col-2">
                         <input id="inputCEP" type="number" class="form-control " placeholder="00000-000" aria-label="CEP" onblur="CEPSearch()">
                     </div>
                 </div>
 
                 <div class="row mt-3">
-                    <label for="inputEndere" class="col-1">Endereço:</label>
+                    <label for="inputEndere" class="col-1 text-start">Endereço:</label>
                     <div class="col">
 
                         <input id="inputEndere" type="text" class="form-control" disabled>
                     </div>
-                    <label for="inputNumero" class="col-1">Numero:</label>
+                    <label for="inputNumero" class="col-1 g-1">Numero:</label>
                     <div class="col-1">
                         <input id="inputNumero" type="number" class="form-control" disabled>
                     </div>
                 </div>
                 <div class="row mt-3">
                     
-                    <label for="inputEndere" class="col-1">Bairro:</label>
+                    <label for="inputEndere" class="col-1 text-start">Bairro:</label>
                     <div class="col">
 
                         <input id="inputBairro" type="text" class="form-control" disabled>
                     </div>
-                    <label for="inputEndere" class="col-1">Cidade:</label>
+                    <label for="inputEndere" class="col-1 g-1">Cidade:</label>
                     <div class="col">
 
                         <input id="inputCidade" type="text" class="form-control" disabled>
                     </div>
-                    <label for="inputEndere" class="col-1">Estado:</label>
+                    <label for="inputEndere" class="col-1 g-1">Estado:</label>
                     <div class="col">
 
                         <input id="inputEstado" type="text" class="form-control" disabled>
                     </div>
                 </div>
+                <div class="row mt-3 justify-content-start">
+                    <button type="button" class="btn btn-primary col-1">Adicionar</button>
+                </div>
 
             </section>
             <section>
-                <table class="table">
+                <table id="tableClientes" class="table mt-3">
                     <thead>
                       <tr>
                         <th scope="col-1">#</th>
@@ -82,9 +85,9 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Mark outro segundo jorge</td>
+                        <td>Rua santa monica, 458</td>
+                        <td>Indaiatuba-SP</td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
@@ -94,7 +97,7 @@
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
+                        <td >Larry the Bird</td>
                         <td>@twitter</td>
                       </tr>
                     </tbody>
