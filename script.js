@@ -2,7 +2,7 @@
 let Clientes = [{
     id: 1,
     nome: "Roberto",
-    endereço: "Rua Jacinto",
+    endereço: "Rua Jacinto, 115",
     cep: "Indaiatuba - SP"
 }];
 let uf;
@@ -38,7 +38,7 @@ function CEPSearch() {
 
             document.getElementById("areaCEP").innerHTML = `<div class="alert alert-danger" role="alert"> CEP invalido! </div>`;
         } else {
-            document.getElementById("inputNum").innerHTML = `<input id="inputNumero" type="number" class="form-control"></input>`;
+            document.getElementById("inputNum").innerHTML = `<input id="inputNumero" type="number" class="form-control" required></input>`;
         }
 
 
@@ -53,7 +53,7 @@ function add() {
     let cli = {
         id: Clientes.length + 1,
         nome: document.getElementById("inputNome").value +" "+ document.getElementById("inputSobrenome").value,
-        endereço: document.getElementById("inputEndere").value,
+        endereço: document.getElementById("inputEndere").value +", "+ document.getElementById("inputNumero").value,
         cep: document.getElementById("inputEstado").value + " - " + uf
     };
 
