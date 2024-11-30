@@ -33,9 +33,10 @@
                 </div>
                 <div class="row mt-3">
                     <label for="inputCEP" class="col-1 text-start">CEP:</label>
-                    <div class="col-2">
-                        <input id="inputCEP" type="number" class="form-control " placeholder="00000-000" aria-label="CEP" onblur="CEPSearch()">
+                    <div  class="col-2">
+                        <input id="inputCEP" type="text" class="form-control " placeholder="00000-000" aria-label="CEP" onblur="CEPSearch()">
                     </div>
+                    <div id="areaCEP" class="col-2"></div>
                 </div>
 
                 <div class="row mt-3">
@@ -45,23 +46,23 @@
                         <input id="inputEndere" type="text" class="form-control" disabled>
                     </div>
                     <label for="inputNumero" class="col-1 g-1">Numero:</label>
-                    <div class="col-1">
-                        <input id="inputNumero" type="number" class="form-control" disabled>
+                    <div id="inputNum" class="col-1">
+                        
                     </div>
                 </div>
                 <div class="row mt-3">
                     
-                    <label for="inputEndere" class="col-1 text-start">Bairro:</label>
+                    <label for="inputBairro" class="col-1 text-start">Bairro:</label>
                     <div class="col">
 
                         <input id="inputBairro" type="text" class="form-control" disabled>
                     </div>
-                    <label for="inputEndere" class="col-1 g-1">Cidade:</label>
+                    <label for="inputCidade" class="col-1 g-1">Cidade:</label>
                     <div class="col">
 
                         <input id="inputCidade" type="text" class="form-control" disabled>
                     </div>
-                    <label for="inputEndere" class="col-1 g-1">Estado:</label>
+                    <label for="inputEstado" class="col-1 g-1">Estado:</label>
                     <div class="col">
 
                         <input id="inputEstado" type="text" class="form-control" disabled>
@@ -115,6 +116,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
